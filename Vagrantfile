@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.define "dairyd-buster64"
-  config.vm.box = "debian/buster64"
+  config.vm.box = "debian/contrib-buster64"
   config.vm.hostname = "dairyd-buster64.local"
   config.vm.boot_timeout = 600
   config.vm.box_check_update = false
