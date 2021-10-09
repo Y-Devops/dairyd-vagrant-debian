@@ -12,19 +12,19 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.define "dairyd-buster64"
+  config.vm.define "paran01d-buster64"
   config.vm.box = "debian/contrib-buster64"
-  config.vm.hostname = "dairyd-buster64.local"
+  config.vm.hostname = "paran01d-buster64.local"
   config.vm.boot_timeout = 600
   config.vm.box_check_update = false
   config.vm.network "public_network"
   config.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
-     vb.name = "dairyd-buster64"
+     vb.name = "paran01d-buster64"
   end
 
   config.vm.provision "shell", inline: <<-SHELL
-      echo "dairyd"
+      echo "paran01d"
       echo "============================================"
       echo "Date: "$(date)
       echo "Kernel: "$(uname -a)
